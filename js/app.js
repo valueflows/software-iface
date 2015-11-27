@@ -1,7 +1,6 @@
-var idpList = 'https://solid.github.io/solid-idp-list/services.json';
-var recommended = ['https://databox.me/'];
+var fedList = 'https://valueflows.github.io/software-list/federations.json';
+var recommended = ['http://allmende.io'];
 
-/* ---- DON'T EDIT BELOW ---- */
 var accURL = {};
 var queryVals = (function(a) {
     if (a == "") return {};
@@ -19,7 +18,7 @@ var queryVals = (function(a) {
 
 var init = function() {
   var http = new XMLHttpRequest();
-  http.open('GET', idpList);
+  http.open('GET', fedList);
   http.onreadystatechange = function() {
       if (this.readyState == this.DONE) {
         if (this.status === 200) {
@@ -33,8 +32,8 @@ var init = function() {
 };
 
 var list = function(data) {
-  for (i in data.idps) {
-    var idp = data.idps[i];
+  for (i in data.valuable) {
+    var idp = data.valuable[i];
 
     // card
     var card = document.createElement('div');
