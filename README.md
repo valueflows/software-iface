@@ -1,3 +1,3 @@
-# solid-idps
-[![](https://img.shields.io/badge/project-Solid-7C4DFF.svg?style=flat-square)](https://github.com/solid/solid)
-> List of Solid-compliant identity providers
+# Software List Interface
+
+This is the UI component for the list of solidarity / next economy software offerings.  See https://github.com/valueflows/software-list/blob/gh-pages/README.md.
